@@ -5,9 +5,25 @@ Sistema completo di gestione messaggi per impianti agricoli con pannelli solari,
 ## 🏗️ Architettura
 
 ```
-Pannelli Solari ──┐
-Irrigatori ────┼──→ RabbitMQ (Topic Exchange) ──→ Monitoraggio
-Sistema Allarme──┘                            └──→ Logger
+┌─────────────────────┐
+│  Pannelli Solari    │ ──┐
+│  (Producer)         │   │
+└─────────────────────┘   │
+                          │
+┌─────────────────────┐   │     ┌──────────────────┐
+│  Irrigatori         │ ──┼──→  │ RabbitMQ Exchange│
+│  (Producer)         │   │     │  (Topic/Fanout)  │
+└─────────────────────┘   │     └──────────────────┘
+                          │            │
+┌─────────────────────┐   │     ┌──────┴──────┬──────────┐
+│  Sistema Allarme    │ ──┘     │             │          │
+│  (Producer)         │         │ Queue 1     │ Queue 2  │
+└─────────────────────┘         │ (Monitor)   │(Logger)  │
+                                │             │          │
+                            ┌───▼─┐      ┌───▼──┐
+                            │ Web │      │ File │
+                            │ App │      │ Log  │
+                            └─────┘      └──────┘
 ```
 
 ## 📋 Requisiti

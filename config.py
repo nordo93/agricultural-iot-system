@@ -28,7 +28,7 @@ TOPICS = {
 
 #Ma NON agriculture.solar_panels.1 ❌
 
-# Queue Configuration
+# Queue Configuration  centralizzo il nome delle code se cambiano , web e monitoring app hanno dei codici commentati su come fosse prima il metodoto connect 
 QUEUES = {
     'monitoring': {
         'name': 'monitoring_queue',
