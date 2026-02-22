@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 Dashboard Agricolo - Sistema IoT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🌾 Sistema Agricolo IoT</h1>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Messaggi:</span>
+                        <span class="stat-value" id="total-messages">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Tempo:</span>
+                        <span class="stat-value" id="uptime">0 min</span>
+                    </div>
+                    <div class="stat-item connection-status" id="connection-status">
+                        <span class="status-dot"></span>
+                        Connessione...
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Pannelli Solari -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>☀️ Pannelli Solari</h2>
+                </div>
+                <div class="cards-grid" id="solar-panels-container">
+                    <!-- Generato dinamicamente -->
+                </div>
+            </section>
+
+            <!-- Irrigatori -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>💧 Irrigatori</h2>
+                </div>
+                <div class="cards-grid" id="irrigation-container">
+                    <!-- Generato dinamicamente -->
+                </div>
+            </section>
+
+            <!-- Allarmi -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>🚨 Allarmi</h2>
+                </div>
+                <div class="alarms-container" id="alarms-container">
+                    <div class="no-alarms">✅ Nessun allarme</div>
+                </div>
+            </section>
+
+            <!-- Log Messaggi -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>📨 Ultimi Messaggi</h2>
+                </div>
+                <div class="messages-log" id="messages-log">
+                    <div class="log-entry">In attesa di messaggi...</div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Sistema Agricolo IoT | Dashboard Real-time</p>
+        </footer>
+    </div>
+
+    <script>
+        const socket = io();
+        const messagesLog = [];
+        const maxLogEntries = 50;
+
+        // ============================================================
+        // CONNESSIONE WEBSOCKET
+        // ============================================================
+
+        socket.on('connect', function() {
+            console.log('✅ Connesso al server');
+            updateConnectionStatus(true);
+        });
+
+        socket.on('disconnect', function() {
+            console.log('❌ Disconnesso dal server');
+            updateConnectionStatus(false);
+        });
+
+        // ============================================================
+        // RICEZIONE MESSAGGI REAL-TIME
+        // ============================================================
+
+        socket.on('new_message', function(data) {
+            console.log('📨 Nuovo messaggio ricevuto:', data.device);
+            addMessageToLog(data);
+        });
+
+        // ============================================================
+        // RICEZIONE STATISTICHE (OGNI 10 MESSAGGI)
+        // ============================================================
+
+        socket.on('stats_update', function(data) {
+            console.log('📊 Statistiche ricevute:', data);
+            updateDashboard(data);
+        });
+
+        // ============================================================
+        // AGGIORNAMENTO STATO CONNESSIONE
+        // ============================================================
+
+        function updateConnectionStatus(connected) {
+            const status = document.getElementById('connection-status');
+            if (connected) {
+                status.innerHTML = '<span class="status-dot connected"></span>Connesso';
+                status.style.color = '#22c55e';
+            } else {
+                status.innerHTML = '<span class="status-dot"></span>Disconnesso';
+                status.style.color = '#ef4444';
+            }
+        }
+
+        // ============================================================
+        // AGGIORNAMENTO DASHBOARD PRINCIPALE
+        // ============================================================
+
+        function updateDashboard(data) {
+            console.log('🔄 Aggiornamento dashboard con dati:', data);
+            
+            // Aggiorna header stats
+            document.getElementById('total-messages').textContent = data.total_messages;
+            document.getElementById('uptime').textContent = data.uptime_minutes + ' min';
+
+            // Aggiorna pannelli solari
+            console.log('☀️ Aggiornamento pannelli solari...');
+            updateSolarPanels(data.solar_panels);
+
+            // Aggiorna irrigatori
+            console.log('💧 Aggiornamento irrigatori...');
+            updateIrrigation(data.irrigation);
+
+            // Aggiorna allarmi
+            console.log('🚨 Aggiornamento allarmi...');
+            updateAlarms(data.alarms, data.total_alarms);
+        }
+
+        // ============================================================
+        // AGGIORNAMENTO PANNELLI SOLARI
+        // ============================================================
+
+        function updateSolarPanels(solarData) {
+            const container = document.getElementById('solar-panels-container');
+            
+            if (!solarData || Object.keys(solarData).length === 0) {
+                container.innerHTML = '<div class="no-data">In attesa di dati...</div>';
+                return;
+            }
+            
+            for (const [panelId, stats] of Object.entries(solarData)) {
+                let card = document.getElementById(`solar-card-${panelId}`);
+                
+                if (!card) {
+                    card = document.createElement('div');
+                    card.id = `solar-card-${panelId}`;
+                    card.className = 'card solar-card';
+                    container.appendChild(card);
+                }
+                
+                // Formatta il timestamp
+                const lastTime = stats.last_timestamp 
+                    ? new Date(stats.last_timestamp).toLocaleTimeString('it-IT')
+                    : 'N/A';
+                
+                card.innerHTML = `
+                    <div class="card-header">
+                        <h3>Pannello ${panelId}</h3>
+                        <span class="badge">☀️</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-label">Ultima Misurazione</span>
+                            <span class="metric-value">${stats.last_power}W @ ${stats.last_temp}°C</span>
+                            <span class="metric-label" style="font-size: 0.8em; color: #94a3b8;">Ore ${lastTime}</span>
+                        </div>
+                        <div style="border-top: 1px solid #475569; margin: 10px 0;"></div>
+                        <div class="metric">
+                            <span class="metric-label">Media Ultima Ora</span>
+                            <span class="metric-value">${stats.avg_power}W @ ${stats.avg_temp}°C</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Range (1h)</span>
+                            <span class="metric-value">${stats.min_power}-${stats.max_power}W</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Misurazioni</span>
+                            <span class="metric-value">${stats.count}</span>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // ============================================================
+        // AGGIORNAMENTO IRRIGATORI
+        // ============================================================
+
+        function updateIrrigation(irrigationData) {
+            const container = document.getElementById('irrigation-container');
+            
+            if (!irrigationData || Object.keys(irrigationData).length === 0) {
+                console.log('⚠️ Nessun dato irrigatori');
+                container.innerHTML = '<div class="no-data">In attesa di dati...</div>';
+                return;
+            }
+            
+            console.log('💧 Zone irrigatori trovate:', Object.keys(irrigationData));
+            
+            for (const [zoneId, stats] of Object.entries(irrigationData)) {
+                let card = document.getElementById(`irrigation-card-${zoneId}`);
+                
+                if (!card) {
+                    console.log(`  ✅ Creazione card zona ${zoneId}`);
+                    card = document.createElement('div');
+                    card.id = `irrigation-card-${zoneId}`;
+                    card.className = 'card irrigation-card';
+                    container.appendChild(card);
+                } else {
+                    console.log(`  🔄 Aggiornamento card zona ${zoneId}`);
+                }
+                
+                const moistureBar = createProgressBar(stats.avg_moisture, 100);
+                const pumpStatus = stats.pump_on_pct > 50 ? '💧 ON' : '⏸️ OFF';
+                const pumpColor = stats.pump_on_pct > 50 ? '#3b82f6' : '#6b7280';
+
+                card.innerHTML = `
+                    <div class="card-header">
+                        <h3>Zona ${zoneId}</h3>
+                        <span class="badge">💧</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-label">Umidità Media</span>
+                            <span class="metric-value">${stats.avg_moisture}%</span>
+                            <div class="progress-bar">${moistureBar}</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Range Umidità</span>
+                            <span class="metric-value">${stats.min_moisture}-${stats.max_moisture}%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Stato Pompa</span>
+                            <span class="metric-value" style="color: ${pumpColor};">${pumpStatus}</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Misurazioni</span>
+                            <span class="metric-value">${stats.count}</span>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // ============================================================
+        // AGGIORNAMENTO ALLARMI
+        // ============================================================
+
+        function updateAlarms(alarmsData, totalAlarms) {
+            const container = document.getElementById('alarms-container');
+            
+            if (totalAlarms === 0) {
+                container.innerHTML = '<div class="no-alarms">✅ Nessun allarme</div>';
+                return;
+            }
+
+            container.innerHTML = ''; // Pulisci prima
+            
+            const severityOrder = ['critical', 'high', 'medium', 'low'];
+            const severityInfo = {
+                'critical': { emoji: '🔴', color: '#dc2626' },
+                'high': { emoji: '🚨', color: '#ea580c' },
+                'medium': { emoji: '⚡', color: '#f59e0b' },
+                'low': { emoji: '⚠️', color: '#eab308' }
+            };
+
+            for (const severity of severityOrder) {
+                const count = alarmsData[severity] || 0;
+                if (count > 0) {
+                    const info = severityInfo[severity];
+                    const alarmDiv = document.createElement('div');
+                    alarmDiv.className = `alarm-item alarm-${severity}`;
+                    alarmDiv.style.borderLeftColor = info.color;
+                    alarmDiv.innerHTML = `
+                        <span class="alarm-emoji">${info.emoji}</span>
+                        <span class="alarm-severity">${severity.toUpperCase()}</span>
+                        <span class="alarm-count">${count}</span>
+                    `;
+                    container.appendChild(alarmDiv);
+                }
+            }
+        }
+
+        // ============================================================
+        // AGGIORNAMENTO LOG MESSAGGI
+        // ============================================================
+
+        function addMessageToLog(data) {
+            const device = data.device || 'unknown';
+            const timestamp = new Date(data.timestamp).toLocaleTimeString('it-IT');
+            
+            let icon = '';
+            let summary = '';
+
+            if (device === 'solar_panel') {
+                icon = '☀️';
+                summary = `Panel ${data.data.panel_id}: ${data.data.power_watts}W @ ${data.data.temperature}°C`;
+            } else if (device === 'irrigation') {
+                icon = '💧';
+                summary = `Zone ${data.data.zone_id}: ${data.data.soil_moisture}% moisture`;
+            } else if (device === 'alarm_system') {
+                icon = '🚨';
+                summary = `[${data.data.severity.toUpperCase()}] ${data.data.description}`;
+            }
+
+            messagesLog.unshift({ icon, timestamp, summary });
+            if (messagesLog.length > maxLogEntries) {
+                messagesLog.pop();
+            }
+
+            renderMessageLog();
+        }
+
+        function renderMessageLog() {
+            const container = document.getElementById('messages-log');
+            container.innerHTML = '';
+
+            for (const msg of messagesLog) {
+                const entry = document.createElement('div');
+                entry.className = 'log-entry';
+                entry.innerHTML = `
+                    <span class="log-time">${msg.timestamp}</span>
+                    <span class="log-icon">${msg.icon}</span>
+                    <span class="log-message">${msg.summary}</span>
+                `;
+                container.appendChild(entry);
+            }
+        }
+
+        // ============================================================
+        // UTILITY FUNCTIONS
+        // ============================================================
+
+        function createProgressBar(value, max) {
+            const percentage = (value / max) * 100;
+            const color = percentage > 70 ? '#22c55e' : percentage > 40 ? '#f59e0b' : '#ef4444';
+            return `<div style="width: 100%; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; margin-top: 4px;">
+                <div style="width: ${percentage}%; height: 100%; background: ${color}; transition: width 0.3s;"></div>
+            </div>`;
+        }
+
+        // ============================================================
+        // AUTO-REFRESH FALLBACK (se WebSocket non funziona)
+        // ============================================================
+
+        setInterval(() => {
+            fetch('/api/stats')
+                .then(r => r.json())
+                .then(data => {
+                    console.log('📡 Dati ricevuti da API fallback');
+                    updateDashboard(data);
+                })
+                .catch(err => console.error('❌ Errore fetch:', err));
+        }, 30000);
+    </script>
+</body>
+</html>
