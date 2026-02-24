@@ -1,6 +1,9 @@
 """
 Configurazione centralizzata
 """
+"""
+Configurazione centralizzata
+"""
 
 # RabbitMQ Configuration
 RABBITMQ_HOST = 'localhost'
@@ -10,40 +13,60 @@ RABBITMQ_PASSWORD = 'admin'
 
 # Exchange Configuration
 EXCHANGE_NAME = 'agricultural_events'
-EXCHANGE_TYPE = 'topic'  # Permette routing basato su pattern
+EXCHANGE_TYPE = 'topic'
+DEAD_LETTER_EXCHANGE = 'agricultural_events_dlx'  # ← NUOVO: Exchange per errori
 
 # Topics (Routing Keys)
 TOPICS = {
     'solar_panels': 'agriculture.solar_panels.#',
     'irrigation': 'agriculture.irrigation.#',
     'alarm': 'agriculture.alarm.#',
-    'all': 'agriculture.#', # ← attenzione agriculture.* è diverso da  agriculture.# , il segno # ascolta tutto
+    'all': 'agriculture.#',
 }
 
-#✅ agriculture.# lo riceve (monitoraggio, logger)
-#❌ agriculture.* NON lo riceve (web_dashboard)
-#Perché agriculture.* matcha solo:
-#agriculture.solar_panels ✅
-#agriculture.irrigation ✅
-
-#Ma NON agriculture.solar_panels.1 ❌
-
-# Queue Configuration  centralizzo il nome delle code se cambiano , web e monitoring app hanno dei codici commentati su come fosse prima il metodoto connect 
+# Queue Configuration con Dead Letter
 QUEUES = {
     'monitoring': {
         'name': 'monitoring_queue',
-        'binding_key': 'agriculture.#'   # Ascolta tutto
+        'binding_key': 'agriculture.#',
+        'dead_letter_exchange': DEAD_LETTER_EXCHANGE  # ← NUOVO
     },
     'logger': {
         'name': 'logger_queue',
-        'binding_key': 'agriculture.#'   # Ascolta tutto
+        'binding_key': 'agriculture.#',
+        'dead_letter_exchange': DEAD_LETTER_EXCHANGE  # ← NUOVO
     },
-    'stats': {                          
+    'stats': {
         'name': 'stats_queue',
-        'binding_key': 'agriculture.#'
+        'binding_key': 'agriculture.#',
+        'dead_letter_exchange': DEAD_LETTER_EXCHANGE  # ← NUOVO
     },
-    'web_dashboard': {                  
+    'web_dashboard': {
         'name': 'web_dashboard_queue',
-        'binding_key': 'agriculture.#'
+        'binding_key': 'agriculture.#',
+        'dead_letter_exchange': DEAD_LETTER_EXCHANGE  # ← NUOVO
+    },
+    'dead_letter': {                                  # ← NUOVO: Queue per errori
+        'name': 'dead_letter_queue',
+        'binding_key': 'agriculture.*',
+        'dead_letter_exchange': None
     }
+}
+
+# Vincoli validazione (come richiesto dal prof)
+VALIDATION_RULES = {
+    'solar_panel': {
+        'panel_id': {'min': 1, 'max': 10},
+        'power_watts': {'min': 0, 'max': 1500},
+        'temperature': {'min': -10, 'max': 80}
+    },
+    'irrigation': {
+        'zone_id': {'min': 1, 'max': 10},
+        'soil_moisture': {'min': 0, 'max': 100},
+        'pump_status': {'allowed': ['on', 'off']}
+    },
+    'alarm_system': {
+        'severity': {'allowed': ['critical', 'high', 'medium', 'low']},
+        'description': {'max_length': 500}
     }
+}
