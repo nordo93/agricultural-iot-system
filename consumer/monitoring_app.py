@@ -1,31 +1,63 @@
 #!/usr/bin/env python3
 """
-Consumer: Applicazione di Monitoraggio
-Riceve tutti gli eventi e li mostra in tempo reale
+Consumer: Monitoraggio in tempo reale
+Riceve tutti gli eventi e li valida
 """
 
 import pika
 import json
 import sys
 import os
-import threading       
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from config import *
-from validator import MessageValidator  # ← IMPORT
+import threading
+from datetime import datetime
+from collections import defaultdict
 
-# ✅ AGGIUNGI: Lock per thread safety
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from config import *
+from validator import MessageValidator
+
+# ✅ Lock per thread safety
 stats_lock = threading.Lock()
 
-class MonitoringApp:
+# Statistiche locali
+stats = {
+    'solar_panels': defaultdict(lambda: {
+        'measurements': [],
+        'count': 0,
+        'last_update': None
+    }),
+    'irrigation': defaultdict(lambda: {
+        'measurements': [],
+        'count': 0,
+        'last_update': None
+    }),
+    'alarms': defaultdict(lambda: {'count': 0}),
+    'total_messages': 0,
+    'start_time': datetime.now()
+}
+
+class RabbitMQConsumer:
+    """Consumer che monitora i messaggi in tempo reale"""
+    
     def __init__(self):
         self.credentials = pika.PlainCredentials(RABBITMQ_USER, RABBITMQ_PASSWORD)
         self.connection = None
         self.channel = None
+        self.connected = False
     
     def connect(self):
-        """Connessione con supporto per Dead Letter Queue"""
+        """Connessione a RabbitMQ con Dead Letter Exchange"""
         try:
-            self.connection = pika.BlockingConnection(...)
+            self.connection = pika.BlockingConnection(
+                pika.ConnectionParameters(
+                    host=RABBITMQ_HOST,
+                    port=RABBITMQ_PORT,
+                    credentials=self.credentials,
+                    connection_attempts=5,
+                    retry_delay=2
+                )
+            )
             self.channel = self.connection.channel()
             
             # Dichiara exchange normale
@@ -60,10 +92,17 @@ class MonitoringApp:
             )
             
             self.connected = True
-            print("✅ Connesso a RabbitMQ con Dead Letter Exchange")
+            print("✅ [MONITORING] Connesso a RabbitMQ")
+            print(f"   Exchange: {EXCHANGE_NAME}")
+            print(f"   Queue: {QUEUES['monitoring']['name']}")
+            print(f"   Dead Letter Exchange: {DEAD_LETTER_EXCHANGE}")
             return True
+        
         except Exception as e:
-            print(f"❌ Errore connessione: {e}")
+            print(f"❌ [MONITORING] Errore connessione: {e}")
+            import traceback
+            traceback.print_exc()
+            self.connected = False
             return False
     
     def callback(self, ch, method, properties, body):
@@ -78,7 +117,8 @@ class MonitoringApp:
             if not is_valid:
                 # ❌ Messaggio invalido → NACK per inviare a DLQ
                 print(f"❌ [MONITORING] Validazione fallita: {error_msg}")
-                print(f"   Data: {json.dumps(message)}")
+                print(f"   Device: {device}")
+                print(f"   Data: {json.dumps(message)}\n")
                 
                 # Nack SENZA requeue (va direttamente a DLQ)
                 ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
@@ -92,15 +132,20 @@ class MonitoringApp:
                     self.process_irrigation_data(message)
                 elif device == 'alarm_system':
                     self.process_alarm_data(message)
+                
+                stats['total_messages'] += 1
             
             # ✅ STEP 3: ACK il messaggio (successo)
             ch.basic_ack(delivery_tag=method.delivery_tag)
             
-            print(f"✅ [MONITORING] Messaggio elaborato: {device}")
+            # Debug
+            if stats['total_messages'] % 50 == 0:
+                print(f"✅ [MONITORING] Messaggi elaborati: {stats['total_messages']}")
         
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
             # Messaggio non è JSON valido
             print(f"❌ [MONITORING] JSON non valido: {body}")
+            print(f"   Errore: {e}\n")
             ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
         
         except Exception as e:
@@ -109,49 +154,106 @@ class MonitoringApp:
             traceback.print_exc()
             ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
     
-    def print_solar(self, msg):
-        print(f"���️ PANNELLO {msg['panel_id']} | {msg['power_watts']:4d}W @ {msg['temperature']:2d}°C | {msg['status']}")
+    def process_solar_data(self, msg):
+        """Elabora dati pannello solare"""
+        panel_id = msg.get('panel_id')
+        power = msg.get('power_watts', 0)
+        temp = msg.get('temperature', 0)
+        timestamp = datetime.fromisoformat(msg.get('timestamp'))
+        
+        s = stats['solar_panels'][panel_id]
+        s['measurements'].append({
+            'timestamp': timestamp,
+            'power': power,
+            'temp': temp
+        })
+        s['count'] += 1
+        s['last_update'] = datetime.now().isoformat()
+        
+        # Mantieni solo ultima ora
+        one_hour_ago = datetime.now() - __import__('datetime').timedelta(hours=1)
+        s['measurements'] = [m for m in s['measurements'] if m['timestamp'] > one_hour_ago]
+        
+        # Stampa nel terminale
+        print(f"✅ ☀️ [MONITORING] Pannello {panel_id}: {power}W @ {temp}°C")
     
-    def print_irrigation(self, msg):
-        status = "💧 ON " if msg['pump_status'] == 'on' else "⏸️ OFF"
-        print(f"{status} | ZONA {msg['zone_id']} | Umidità: {msg['soil_moisture']:3d}% | {msg['status']}")
+    def process_irrigation_data(self, msg):
+        """Elabora dati irrigatore"""
+        zone_id = msg.get('zone_id')
+        moisture = msg.get('soil_moisture', 0)
+        pump_status = msg.get('pump_status', 'off')
+        timestamp = datetime.fromisoformat(msg.get('timestamp'))
+        
+        s = stats['irrigation'][zone_id]
+        s['measurements'].append({
+            'timestamp': timestamp,
+            'moisture': moisture,
+            'pump_status': pump_status
+        })
+        s['count'] += 1
+        s['last_update'] = datetime.now().isoformat()
+        
+        # Mantieni solo ultima ora
+        one_hour_ago = datetime.now() - __import__('datetime').timedelta(hours=1)
+        s['measurements'] = [m for m in s['measurements'] if m['timestamp'] > one_hour_ago]
+        
+        # Stampa nel terminale
+        pump_txt = "💧 ON" if pump_status == 'on' else "⏸️ OFF"
+        print(f"✅ 💧 [MONITORING] Zona {zone_id}: {moisture}% {pump_txt}")
     
-    def print_alarm(self, msg):
-        emoji = {'low': '⚠️', 'medium': '⚡', 'high': '🚨', 'critical': '🔴'}
-        icon = emoji.get(msg['severity'], '❓')
-        print(f"{icon} ALLARME [{msg['severity'].upper()}] {msg['description']}")
+    def process_alarm_data(self, msg):
+        """Elabora dati allarme"""
+        severity = msg.get('severity', 'unknown')
+        description = msg.get('description', '')
+        
+        s = stats['alarms'][severity]
+        s['count'] += 1
+        
+        # Stampa nel terminale
+        emoji_map = {
+            'critical': '🔴',
+            'high': '🚨',
+            'medium': '⚡',
+            'low': '⚠️'
+        }
+        emoji = emoji_map.get(severity, '❓')
+        
+        print(f"✅ {emoji} [MONITORING] [{severity.upper()}] {description}")
     
     def start_consuming(self):
-        self.channel.basic_qos(prefetch_count=1)
-        queue_name = QUEUES['monitoring']['name']
+        """Inizia a consumare messaggi"""
+        self.channel.basic_qos(prefetch_count=10)
         self.channel.basic_consume(
-            queue=queue_name,
+            queue=QUEUES['monitoring']['name'],
             on_message_callback=self.callback
         )
         
         print("=" * 70)
-        print("📊 APPLICAZIONE DI MONITORAGGIO")
+        print("📊 CONSUMER: MONITORAGGIO IN TEMPO REALE")
         print("=" * 70)
-        print(f"⏳ In ascolto su queue: {queue_name}")
-        print("⏳ In attesa di eventi... (Premi Ctrl+C per uscire)\n")
+        print("⏳ In ascolto da RabbitMQ...")
+        print(f"📁 Queue: {QUEUES['monitoring']['name']}")
+        print(f"🔧 Dead Letter Exchange: {DEAD_LETTER_EXCHANGE}\n")
         
         self.channel.start_consuming()
     
     def close(self):
-        if self.channel and not self.channel.is_closed:
-            self.channel.stop_consuming()
         if self.connection and not self.connection.is_closed:
             self.connection.close()
+            print("✅ [MONITORING] Connessione RabbitMQ chiusa")
 
 def main():
-    app = MonitoringApp()
-    app.connect()
+    consumer = RabbitMQConsumer()
+    
+    if not consumer.connect():
+        print("❌ Impossibile connettersi a RabbitMQ. Esco.")
+        return
     
     try:
-        app.start_consuming()
+        consumer.start_consuming()
     except KeyboardInterrupt:
-        print("\n\n👋 Monitoraggio fermato")
-        app.close()
+        print("\n\n👋 [MONITORING] Consumer fermato")
+        consumer.close()
 
 if __name__ == "__main__":
     main()
