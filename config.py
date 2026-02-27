@@ -56,9 +56,9 @@ QUEUES = {
 # Vincoli validazione (come richiesto dal prof)
 VALIDATION_RULES = {
     'solar_panel': {
-        'panel_id': {'min': 1, 'max': 10},
-        'power_watts': {'min': 0, 'max': 1500},
-        'temperature': {'min': -10, 'max': 80}
+        'panel_id': {'min': 0, 'max': 10},
+        'power_watts': {'min': 0, 'max': 600},
+        'temperature': {'min': -10, 'max': 60}
     },
     'irrigation': {
         'zone_id': {'min': 1, 'max': 10},

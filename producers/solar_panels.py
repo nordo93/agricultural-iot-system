@@ -76,7 +76,8 @@ class SolarPanelsProducer:
                 body=json.dumps(message),
                 properties=pika.BasicProperties(delivery_mode=2)
             )
-            print(f"✅ ☀️ [{routing_key}] {power_watts}W @ {temperature}°C")
+            print(f"✅ ☀️ [{routing_key}] potenza: {power_watts}W @ temperatura: {temperature}°C")
+            #print(f"✅ ☀️ potenza: {power_watts}W @ temperatura: {temperature}°C")
         except Exception as e:
             print(f"❌ Errore invio: {e}")
             import traceback

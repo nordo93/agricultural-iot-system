@@ -1,0 +1,11 @@
+# Ferma RabbitMQ
+docker-compose down
+
+# Elimina il volume di dati (ATTENZIONE: elimina TUTTI i dati!)
+docker volume prune -f
+
+# Riavvia RabbitMQ
+docker-compose up -d
+
+#Avvia cleanup_queues.py
+python cleanup_queues.py
