@@ -1,5 +1,6 @@
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:46:26.904010
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -9,11 +10,37 @@
   "panel_id": 1,
   "power_watts": 831,
   "temperature": 43,
+=======
+⏰ Timestamp: 2026-03-05T19:48:44.930693
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:48:44.886951",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 26,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T19:49:00.181693
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:00.137770",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 799,
+  "temperature": 41,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:46:41.872862
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -93,11 +120,23 @@
   "panel_id": 2,
   "power_watts": 668,
   "temperature": 28,
+=======
+⏰ Timestamp: 2026-03-05T19:49:01.141365
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:01.138692",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 852,
+  "temperature": 42,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:47:33.909598
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -288,12 +327,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 845,
+=======
+⏰ Timestamp: 2026-03-05T19:49:13.144476
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:13.141331",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 699,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 29,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:49:56.000943
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -303,11 +353,23 @@
   "panel_id": 2,
   "power_watts": 861,
   "temperature": 38,
+=======
+⏰ Timestamp: 2026-03-05T19:49:35.908256
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:35.905268",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 21,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:50:09.765898
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -624,12 +686,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 913,
+=======
+⏰ Timestamp: 2026-03-05T19:49:39.152715
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:39.149164",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 694,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 50,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:54:04.918886
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -820,12 +893,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 809,
+=======
+⏰ Timestamp: 2026-03-05T19:49:41.154816
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:41.151138",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 695,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 48,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:56:27.992489
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -835,11 +919,23 @@
   "panel_id": 3,
   "power_watts": 950,
   "temperature": 59,
+=======
+⏰ Timestamp: 2026-03-05T19:49:44.909396
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:44.906687",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T13:56:40.002663
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -1799,6 +1895,15 @@
   "timestamp": "2026-03-05T14:07:43.487247",
   "device": "solar_panel",
   "panel_id": 2,
+=======
+⏰ Timestamp: 2026-03-05T19:49:52.156006
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:49:52.152545",
+  "device": "solar_panel",
+  "panel_id": 1,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "power_watts": 742,
   "temperature": 33,
   "status": "ok"
@@ -1806,6 +1911,7 @@
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:07:55.498281
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -1815,11 +1921,23 @@
   "panel_id": 1,
   "power_watts": 840,
   "temperature": 41,
+=======
+⏰ Timestamp: 2026-03-05T19:50:22.920665
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:22.917987",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:08:08.503154
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -3537,11 +3655,23 @@
   "panel_id": 1,
   "power_watts": 754,
   "temperature": 55,
+=======
+⏰ Timestamp: 2026-03-05T19:50:32.176207
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:32.172155",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 754,
+  "temperature": 58,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:31:48.282187
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -3830,12 +3960,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 700,
+=======
+⏰ Timestamp: 2026-03-05T19:50:33.176851
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:33.173400",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 635,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 39,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:36:21.436435
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -3845,11 +3986,23 @@
   "panel_id": 3,
   "power_watts": 848,
   "temperature": 48,
+=======
+⏰ Timestamp: 2026-03-05T19:50:33.925014
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:33.921243",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 23,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:36:47.458679
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -3929,11 +4082,23 @@
   "panel_id": 1,
   "power_watts": 683,
   "temperature": 42,
+=======
+⏰ Timestamp: 2026-03-05T19:50:44.177593
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:44.174454",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 683,
+  "temperature": 60,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:37:52.510269
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -3970,12 +4135,107 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 941,
+=======
+⏰ Timestamp: 2026-03-05T19:50:57.181587
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:57.177859",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 698,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:50:58.931604
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:58.928720",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:50:59.183107
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:50:59.180217",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 633,
+  "temperature": 46,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:51:24.190370
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:24.186731",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 629,
+  "temperature": 57,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:51:32.939733
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:32.937058",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:51:36.192865
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:36.188958",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 705,
+  "temperature": 27,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:51:38.195252
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:38.192103",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 884,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 41,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:38:17.573219
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -5357,11 +5617,23 @@
   "panel_id": 3,
   "power_watts": 865,
   "temperature": 36,
+=======
+⏰ Timestamp: 2026-03-05T19:51:46.945430
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:46.941967",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:56:16.132628
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -5720,12 +5992,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 828,
+=======
+⏰ Timestamp: 2026-03-05T19:51:49.196783
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:49.193363",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 982,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 43,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T14:59:58.311800
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6154,12 +6437,37 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 961,
+=======
+⏰ Timestamp: 2026-03-05T19:51:56.946486
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:51:56.943793",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:52:03.200997
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:03.197397",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 628,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 46,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:06:16.644458
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6169,11 +6477,23 @@
   "panel_id": 3,
   "power_watts": 606,
   "temperature": 31,
+=======
+⏰ Timestamp: 2026-03-05T19:52:04.201205
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:04.198593",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 651,
+  "temperature": 28,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:07:06.773392
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6350,12 +6670,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 977,
+=======
+⏰ Timestamp: 2026-03-05T19:52:15.217661
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:15.203355",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 902,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 45,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:09:16.934471
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6365,11 +6696,23 @@
   "panel_id": 1,
   "power_watts": 950,
   "temperature": 50,
+=======
+⏰ Timestamp: 2026-03-05T19:52:23.956910
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:23.954237",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 29,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:09:18.937324
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6393,11 +6736,23 @@
   "panel_id": 2,
   "power_watts": 855,
   "temperature": 43,
+=======
+⏰ Timestamp: 2026-03-05T19:52:42.225209
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:42.221079",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 871,
+  "temperature": 25,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:09:42.944871
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6532,12 +6887,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 742,
+=======
+⏰ Timestamp: 2026-03-05T19:52:55.235959
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:52:55.226193",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 635,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 37,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:10:34.971577
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6715,11 +7081,23 @@
   "panel_id": 2,
   "power_watts": 787,
   "temperature": 26,
+=======
+⏰ Timestamp: 2026-03-05T19:53:08.238893
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:08.235762",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 884,
+  "temperature": 42,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:12:20.044527
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6798,12 +7176,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 716,
+=======
+⏰ Timestamp: 2026-03-05T19:53:09.239789
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:09.236626",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 693,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 37,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:12:59.061095
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -6994,12 +7383,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 730,
+=======
+⏰ Timestamp: 2026-03-05T19:53:21.242268
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:21.238850",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 617,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 31,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:15:22.165802
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7162,12 +7562,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 997,
+=======
+⏰ Timestamp: 2026-03-05T19:53:22.242935
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:22.239935",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 733,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 27,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:17:58.263284
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7176,12 +7587,37 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 883,
+=======
+⏰ Timestamp: 2026-03-05T19:53:32.975966
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:32.973146",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:53:34.245316
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:34.242223",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 817,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 54,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:17:59.264695
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7288,12 +7724,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 752,
+=======
+⏰ Timestamp: 2026-03-05T19:53:46.250152
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:46.247276",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 775,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 42,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:19:16.302783
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7303,11 +7750,23 @@
   "panel_id": 2,
   "power_watts": 686,
   "temperature": 59,
+=======
+⏰ Timestamp: 2026-03-05T19:53:46.980620
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:46.977698",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:19:17.304436
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7428,12 +7887,37 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 767,
+=======
+⏰ Timestamp: 2026-03-05T19:53:47.981180
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:47.978218",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:53:48.252305
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:48.249380",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 873,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 37,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:20:35.349940
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7540,12 +8024,79 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 764,
+=======
+⏰ Timestamp: 2026-03-05T19:53:57.984446
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:53:57.980645",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:54:12.257324
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:12.254261",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 990,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:54:25.260942
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:25.257987",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 614,
+  "temperature": 58,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:54:26.262831
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:26.259138",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 770,
+  "temperature": 57,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:54:40.267835
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:40.263936",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 662,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 28,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:04.408067
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7555,11 +8106,23 @@
   "panel_id": 1,
   "power_watts": 795,
   "temperature": 50,
+=======
+⏰ Timestamp: 2026-03-05T19:54:47.997069
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:47.994063",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 22,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:05.410741
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7568,12 +8131,37 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 621,
+=======
+⏰ Timestamp: 2026-03-05T19:54:51.269173
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:51.266293",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 825,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:54:53.271627
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:53.268605",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 881,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 31,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:18.433810
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7583,11 +8171,23 @@
   "panel_id": 2,
   "power_watts": 799,
   "temperature": 54,
+=======
+⏰ Timestamp: 2026-03-05T19:54:59.001125
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:58.996756",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 21,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:30.435829
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7597,11 +8197,23 @@
   "panel_id": 1,
   "power_watts": 645,
   "temperature": 44,
+=======
+⏰ Timestamp: 2026-03-05T19:55:00.000217
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:54:59.997549",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 29,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:32.441146
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7611,11 +8223,23 @@
   "panel_id": 3,
   "power_watts": 694,
   "temperature": 60,
+=======
+⏰ Timestamp: 2026-03-05T19:55:06.274725
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:06.271941",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 955,
+  "temperature": 37,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:44.444271
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7625,11 +8249,23 @@
   "panel_id": 2,
   "power_watts": 755,
   "temperature": 41,
+=======
+⏰ Timestamp: 2026-03-05T19:55:11.002985
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:11.000164",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 26,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:22:45.445647
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7666,12 +8302,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 660,
+=======
+⏰ Timestamp: 2026-03-05T19:55:32.282340
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:32.279004",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 623,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 48,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:23:11.461554
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7681,11 +8328,555 @@
   "panel_id": 3,
   "power_watts": 871,
   "temperature": 46,
+=======
+⏰ Timestamp: 2026-03-05T19:55:43.283601
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:43.280142",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 793,
+  "temperature": 25,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T19:55:45.010363
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:45.007506",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:55:46.011504
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:46.008819",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:55:58.289683
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:55:58.286749",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 835,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:09.291679
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:09.288259",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 668,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:10.018268
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:10.015461",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:10.293026
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:10.289366",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 943,
+  "temperature": 57,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:22.021714
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:22.018598",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:22.294160
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:22.291317",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 838,
+  "temperature": 45,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:47.028241
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:47.025697",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:48.301716
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:48.298763",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 844,
+  "temperature": 54,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:49.303720
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:49.299946",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 926,
+  "temperature": 35,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:56:57.029734
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:56:57.027306",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:10.034227
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:10.031242",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:14.309935
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:14.306495",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 737,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:15.310831
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:15.307650",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 612,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:24.039216
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:24.036316",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:28.314695
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:28.310717",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 664,
+  "temperature": 46,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:29.314741
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:29.311598",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 806,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:41.318067
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:41.314041",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 722,
+  "temperature": 41,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:53.320320
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:53.316944",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 875,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:57:55.323053
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:57:55.319744",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 929,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:06.325607
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:06.321687",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 947,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:07.327057
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:07.323200",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 933,
+  "temperature": 40,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:10.052168
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:10.048340",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:21.054346
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:21.051548",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:32.335324
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:32.331937",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 873,
+  "temperature": 43,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:33.337242
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:33.333290",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 748,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:34.058219
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:34.054957",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:34.337416
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:34.334550",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 863,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:35.057978
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:35.055383",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:45.060481
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:45.057317",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:46.061468
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:46.058055",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:47.340772
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:47.337764",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 695,
+  "temperature": 32,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:58.064989
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:58.061049",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:58:59.343270
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:58:59.340035",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 990,
+  "temperature": 49,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:00.343536
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:00.340598",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 965,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:12.346589
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:12.343056",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 788,
+  "temperature": 40,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:13.347143
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:13.343896",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 871,
+  "temperature": 57,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:23:23.468663
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -7820,12 +9011,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 743,
+=======
+⏰ Timestamp: 2026-03-05T19:59:24.352444
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:24.347008",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 901,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 53,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:24:29.516200
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8072,12 +9274,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 858,
+=======
+⏰ Timestamp: 2026-03-05T19:59:25.353089
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:25.349758",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 874,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 41,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:27:16.604896
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8087,11 +9300,23 @@
   "panel_id": 1,
   "power_watts": 979,
   "temperature": 27,
+=======
+⏰ Timestamp: 2026-03-05T19:59:26.353841
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:26.350926",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 871,
+  "temperature": 60,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:27:17.603765
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8101,11 +9326,639 @@
   "panel_id": 2,
   "power_watts": 804,
   "temperature": 45,
+=======
+⏰ Timestamp: 2026-03-05T19:59:33.071804
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:33.068927",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T19:59:38.356297
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:38.352837",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 837,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:39.356905
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:39.353941",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 909,
+  "temperature": 41,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:50.358850
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:50.355395",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 947,
+  "temperature": 28,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:51.365064
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:51.356890",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 949,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T19:59:52.367212
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T19:59:52.363907",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 742,
+  "temperature": 58,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:04.382228
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:04.379305",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 815,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:05.383166
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:05.380145",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 989,
+  "temperature": 36,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:21.085291
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:21.081943",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:29.388680
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:29.385135",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 750,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:35.089151
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:35.086416",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:42.391277
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:42.388591",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 784,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:43.392799
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:43.389407",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 655,
+  "temperature": 34,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:00:55.394549
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:00:55.391858",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 639,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:09.099013
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:09.095863",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:09.398954
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:09.395731",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 734,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:21.102398
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:21.099636",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:21.401299
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:21.398361",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 912,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:22.403996
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:22.399452",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 661,
+  "temperature": 46,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:23.404903
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:23.401285",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 818,
+  "temperature": 25,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:33.106172
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:33.103438",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:36.412408
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:36.408869",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 930,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:45.109264
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:45.106588",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:01:57.113453
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:01:57.109224",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:09.116006
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:09.113395",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:14.422696
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:14.417515",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 752,
+  "temperature": 41,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:22.120219
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:22.117145",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:23.120624
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:23.117835",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:28.428647
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:28.425521",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 954,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:35.124744
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:35.121902",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:40.433806
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:40.429081",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 730,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:02:57.128544
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:02:57.125791",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:06.440808
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:06.437382",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 732,
+  "temperature": 45,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:07.441363
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:07.438321",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 698,
+  "temperature": 44,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:19.445118
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:19.441523",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 956,
+  "temperature": 26,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:20.446496
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:20.442577",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 920,
+  "temperature": 29,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:21.135078
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:21.132393",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:22.135678
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:22.132904",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:23.136758
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:23.133767",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:31.447527
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:31.444656",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 840,
+  "temperature": 44,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:35.147738
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:35.144271",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:03:48.150853
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:03:48.147602",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:04:00.153811
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:00.151311",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:04:12.459954
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:12.456794",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 916,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:04:24.580713
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:24.460085",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 804,
+  "temperature": 53,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:27:29.608929
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8115,11 +9968,37 @@
   "panel_id": 1,
   "power_watts": 683,
   "temperature": 49,
+=======
+⏰ Timestamp: 2026-03-05T20:04:33.162818
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:33.158776",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:04:36.465054
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:36.462574",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 980,
+  "temperature": 53,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:27:42.613898
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8436,12 +10315,23 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 995,
+=======
+⏰ Timestamp: 2026-03-05T20:04:37.466581
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:37.463528",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 803,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 52,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:34:28.308823
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8451,11 +10341,23 @@
   "panel_id": 3,
   "power_watts": 879,
   "temperature": 49,
+=======
+⏰ Timestamp: 2026-03-05T20:04:38.467235
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:38.464303",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 701,
+  "temperature": 27,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:34:39.311650
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8465,11 +10367,23 @@
   "panel_id": 1,
   "power_watts": 854,
   "temperature": 29,
+=======
+⏰ Timestamp: 2026-03-05T20:04:47.165942
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:47.163299",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:34:40.310611
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8479,11 +10393,23 @@
   "panel_id": 2,
   "power_watts": 774,
   "temperature": 41,
+=======
+⏰ Timestamp: 2026-03-05T20:04:50.469784
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:04:50.466581",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 948,
+  "temperature": 27,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:34:53.319924
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8493,11 +10419,37 @@
   "panel_id": 2,
   "power_watts": 609,
   "temperature": 33,
+=======
+⏰ Timestamp: 2026-03-05T20:05:10.172282
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:10.169227",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 25,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:05:16.478484
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:16.472996",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 780,
+  "temperature": 60,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:35:05.324294
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8535,11 +10487,23 @@
   "panel_id": 3,
   "power_watts": 736,
   "temperature": 36,
+=======
+⏰ Timestamp: 2026-03-05T20:05:17.477864
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:17.474327",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 899,
+  "temperature": 51,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:35:19.335061
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8549,11 +10513,23 @@
   "panel_id": 2,
   "power_watts": 735,
   "temperature": 46,
+=======
+⏰ Timestamp: 2026-03-05T20:05:21.174308
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:21.171738",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 26,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:35:31.340234
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8591,11 +10567,23 @@
   "panel_id": 3,
   "power_watts": 941,
   "temperature": 56,
+=======
+⏰ Timestamp: 2026-03-05T20:05:30.481096
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:30.478066",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 645,
+  "temperature": 25,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:35:44.343218
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8884,12 +10872,37 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 838,
+=======
+⏰ Timestamp: 2026-03-05T20:05:36.181920
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:36.179128",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:05:41.483011
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:41.479701",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 646,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 42,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:41:10.521514
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8913,11 +10926,23 @@
   "panel_id": 3,
   "power_watts": 824,
   "temperature": 30,
+=======
+⏰ Timestamp: 2026-03-05T20:05:43.484441
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:43.481487",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 867,
+  "temperature": 34,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:41:36.538589
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8927,11 +10952,23 @@
   "panel_id": 2,
   "power_watts": 895,
   "temperature": 47,
+=======
+⏰ Timestamp: 2026-03-05T20:05:45.182539
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:45.180050",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:41:37.541489
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -8941,11 +10978,23 @@
   "panel_id": 3,
   "power_watts": 712,
   "temperature": 27,
+=======
+⏰ Timestamp: 2026-03-05T20:05:48.184651
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:48.181956",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T15:41:50.544600
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -10605,6 +12654,15 @@
   "timestamp": "2026-03-05T16:01:59.613272",
   "device": "solar_panel",
   "panel_id": 2,
+=======
+⏰ Timestamp: 2026-03-05T20:05:54.487871
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:54.483133",
+  "device": "solar_panel",
+  "panel_id": 1,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "power_watts": 965,
   "temperature": 59,
   "status": "ok"
@@ -10612,6 +12670,7 @@
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T16:02:00.619426
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18569,6 +20628,13 @@
 ❌ Reason: Validazione fallita
 📊 Data: {
   "timestamp": "2026-03-05T17:37:50.053705",
+=======
+⏰ Timestamp: 2026-03-05T20:05:55.489593
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:55.484523",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 692,
@@ -18578,6 +20644,7 @@
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:37:51.064306
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18587,11 +20654,23 @@
   "panel_id": 3,
   "power_watts": 995,
   "temperature": 44,
+=======
+⏰ Timestamp: 2026-03-05T20:05:58.186762
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:05:58.183871",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 28,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:38:02.065130
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18601,11 +20680,23 @@
   "panel_id": 1,
   "power_watts": 999,
   "temperature": 33,
+=======
+⏰ Timestamp: 2026-03-05T20:06:07.490947
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:07.487229",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 637,
+  "temperature": 36,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:38:03.067460
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18615,11 +20706,23 @@
   "panel_id": 2,
   "power_watts": 824,
   "temperature": 37,
+=======
+⏰ Timestamp: 2026-03-05T20:06:10.191147
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:10.187742",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 27,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:38:16.087743
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18629,11 +20732,23 @@
   "panel_id": 2,
   "power_watts": 884,
   "temperature": 34,
+=======
+⏰ Timestamp: 2026-03-05T20:06:21.192905
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:21.190150",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 26,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:38:17.079140
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -18754,12 +20869,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 642,
+=======
+⏰ Timestamp: 2026-03-05T20:06:33.498554
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:33.494938",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 877,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 38,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:40:51.168818
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19076,12 +21202,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 617,
+=======
+⏰ Timestamp: 2026-03-05T20:06:34.499700
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:34.496250",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 661,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 30,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:46:03.342868
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19244,12 +21381,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 670,
+=======
+⏰ Timestamp: 2026-03-05T20:06:46.501877
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:46.498898",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 631,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 30,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:49:07.449306
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19259,11 +21407,23 @@
   "panel_id": 3,
   "power_watts": 896,
   "temperature": 44,
+=======
+⏰ Timestamp: 2026-03-05T20:06:47.201453
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:47.198594",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 25,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:49:19.454614
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19356,12 +21516,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 765,
+=======
+⏰ Timestamp: 2026-03-05T20:06:47.503858
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:47.499740",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 840,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 54,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:51:17.523003
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19371,11 +21542,37 @@
   "panel_id": 3,
   "power_watts": 882,
   "temperature": 52,
+=======
+⏰ Timestamp: 2026-03-05T20:06:48.201867
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:48.198991",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 22,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:06:48.503707
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:48.500702",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 916,
+  "temperature": 60,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:51:29.528938
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19385,11 +21582,23 @@
   "panel_id": 2,
   "power_watts": 899,
   "temperature": 52,
+=======
+⏰ Timestamp: 2026-03-05T20:06:58.203495
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:58.200333",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 20,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:51:30.528660
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19399,11 +21608,23 @@
   "panel_id": 3,
   "power_watts": 959,
   "temperature": 42,
+=======
+⏰ Timestamp: 2026-03-05T20:06:59.203755
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:59.201080",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:51:56.541777
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19427,11 +21648,23 @@
   "panel_id": 1,
   "power_watts": 652,
   "temperature": 33,
+=======
+⏰ Timestamp: 2026-03-05T20:06:59.505507
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:06:59.502298",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 757,
+  "temperature": 35,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:52:08.548712
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19441,11 +21674,23 @@
   "panel_id": 2,
   "power_watts": 866,
   "temperature": 26,
+=======
+⏰ Timestamp: 2026-03-05T20:07:09.205734
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:09.202816",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:52:22.557654
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19455,11 +21700,23 @@
   "panel_id": 3,
   "power_watts": 960,
   "temperature": 51,
+=======
+⏰ Timestamp: 2026-03-05T20:07:11.206947
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:11.204126",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 26,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:52:35.563258
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19483,11 +21740,23 @@
   "panel_id": 1,
   "power_watts": 775,
   "temperature": 31,
+=======
+⏰ Timestamp: 2026-03-05T20:07:12.509268
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:12.506539",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 677,
+  "temperature": 46,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:53:00.575864
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19538,12 +21807,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 740,
+=======
+⏰ Timestamp: 2026-03-05T20:07:13.511369
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:13.507648",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 606,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 53,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:53:25.587381
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19553,11 +21833,37 @@
   "panel_id": 1,
   "power_watts": 804,
   "temperature": 48,
+=======
+⏰ Timestamp: 2026-03-05T20:07:22.209493
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:22.206380",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 24,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:07:25.513082
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:25.509889",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 656,
+  "temperature": 42,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:53:39.594359
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -19804,12 +22110,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 756,
+=======
+⏰ Timestamp: 2026-03-05T20:07:27.514666
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:27.511741",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 647,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 43,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T17:57:46.734589
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20448,12 +22765,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 775,
+=======
+⏰ Timestamp: 2026-03-05T20:07:39.518953
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:39.514907",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 648,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 57,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-05T18:04:29.955788
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20630,12 +22958,79 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 789,
+=======
+⏰ Timestamp: 2026-03-05T20:07:46.226271
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:46.214587",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:07:47.223833
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:47.220451",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:07:57.226105
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:07:57.222987",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:08:00.228213
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:00.225212",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:08:05.525243
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:05.520743",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 757,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 58,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:00:03.929649
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20645,11 +23040,23 @@
   "panel_id": 1,
   "power_watts": 952,
   "temperature": 34,
+=======
+⏰ Timestamp: 2026-03-05T20:08:06.525303
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:06.522311",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 836,
+  "temperature": 59,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:00:04.933930
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20658,12 +23065,23 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 898,
+=======
+⏰ Timestamp: 2026-03-05T20:08:17.526734
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:17.523551",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 940,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 51,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:00:16.940419
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20673,11 +23091,37 @@
   "panel_id": 1,
   "power_watts": 1000,
   "temperature": 53,
+=======
+⏰ Timestamp: 2026-03-05T20:08:24.236515
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:24.233407",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:08:30.529724
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:30.527126",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 928,
+  "temperature": 27,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:00:18.943841
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20687,11 +23131,23 @@
   "panel_id": 3,
   "power_watts": 747,
   "temperature": 30,
+=======
+⏰ Timestamp: 2026-03-05T20:08:33.237522
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:33.234922",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:00:29.946670
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20770,12 +23226,37 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 625,
+=======
+⏰ Timestamp: 2026-03-05T20:08:35.239903
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:35.236811",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:08:43.534075
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:43.530810",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 762,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 33,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:01:10.882050
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20938,12 +23419,23 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 959,
+=======
+⏰ Timestamp: 2026-03-05T20:08:44.535628
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:44.531873",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 663,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 34,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:03:22.997020
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20953,11 +23445,51 @@
   "panel_id": 3,
   "power_watts": 944,
   "temperature": 39,
+=======
+⏰ Timestamp: 2026-03-05T20:08:45.240942
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:45.237946",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:08:47.242112
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:47.239571",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:08:58.539506
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:08:58.536418",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 783,
+  "temperature": 46,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:03:35.035868
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20967,11 +23499,23 @@
   "panel_id": 2,
   "power_watts": 962,
   "temperature": 53,
+=======
+⏰ Timestamp: 2026-03-05T20:09:09.540097
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:09.537307",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 880,
+  "temperature": 47,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:03:48.046644
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -20995,11 +23539,23 @@
   "panel_id": 3,
   "power_watts": 845,
   "temperature": 39,
+=======
+⏰ Timestamp: 2026-03-05T20:09:11.542011
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:11.539205",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 939,
+  "temperature": 49,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:04:14.053001
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21009,11 +23565,23 @@
   "panel_id": 2,
   "power_watts": 734,
   "temperature": 43,
+=======
+⏰ Timestamp: 2026-03-05T20:09:23.545635
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:23.541582",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 942,
+  "temperature": 25,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:04:15.057975
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21023,11 +23591,37 @@
   "panel_id": 3,
   "power_watts": 864,
   "temperature": 53,
+=======
+⏰ Timestamp: 2026-03-05T20:09:24.253562
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:24.250923",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 20,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:09:24.545694
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:24.542410",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 994,
+  "temperature": 35,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T00:04:39.065241
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21652,12 +24246,233 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 801,
+=======
+⏰ Timestamp: 2026-03-05T20:09:35.546729
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:35.543962",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 948,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:09:49.552864
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:49.548679",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 637,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:09:57.261274
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:09:57.258368",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:01.554682
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:01.551765",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 798,
+  "temperature": 36,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:10.265503
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:10.262215",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:16.559712
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:16.556826",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 672,
+  "temperature": 36,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:23.268570
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:23.265921",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:29.563371
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:29.560390",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 677,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:33.270384
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:33.267800",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:40.564731
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:40.561746",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 697,
+  "temperature": 38,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:41.566781
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:41.562832",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 630,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:55.570685
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:55.567836",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 890,
+  "temperature": 46,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:57.277767
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:57.274584",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:10:58.279587
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:10:58.276651",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:11:21.579966
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:21.577195",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 820,
+  "temperature": 32,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:11:32.581234
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:32.578297",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 679,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 55,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:11:08.912555
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21709,11 +24524,23 @@
   "panel_id": 2,
   "power_watts": 624,
   "temperature": 44,
+=======
+⏰ Timestamp: 2026-03-05T20:11:33.583674
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:33.579561",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 625,
+  "temperature": 60,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:12:00.934340
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21723,11 +24550,37 @@
   "panel_id": 3,
   "power_watts": 605,
   "temperature": 25,
+=======
+⏰ Timestamp: 2026-03-05T20:11:34.291001
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:34.287547",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 26,
+  "pump_status": "on",
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+⏰ Timestamp: 2026-03-05T20:11:34.583366
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:34.580554",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 825,
+  "temperature": 41,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:12:11.930822
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21764,12 +24617,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 624,
+=======
+⏰ Timestamp: 2026-03-05T20:11:46.585761
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:46.582400",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 686,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 56,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:12:38.940115
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21779,11 +24643,23 @@
   "panel_id": 2,
   "power_watts": 980,
   "temperature": 27,
+=======
+⏰ Timestamp: 2026-03-05T20:11:47.294561
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:47.291101",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:12:39.940041
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21820,12 +24696,23 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 884,
+=======
+⏰ Timestamp: 2026-03-05T20:11:47.587095
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:47.583569",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 918,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 38,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:13:44.988256
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -21835,11 +24722,23 @@
   "panel_id": 3,
   "power_watts": 902,
   "temperature": 59,
+=======
+⏰ Timestamp: 2026-03-05T20:11:48.294929
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:48.291902",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:13:55.985303
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -22366,12 +25265,23 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 898,
+=======
+⏰ Timestamp: 2026-03-05T20:11:58.588184
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:58.584914",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 899,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 41,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:22:10.453826
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -22450,12 +25360,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 938,
+=======
+⏰ Timestamp: 2026-03-05T20:11:59.589693
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:11:59.586013",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 840,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 60,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:22:50.486573
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -22464,12 +25385,51 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 826,
+=======
+⏰ Timestamp: 2026-03-05T20:12:10.300434
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:10.297059",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:12:24.303847
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:24.301159",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:12:24.595572
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:24.592044",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 652,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 60,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:23:02.536169
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -22604,12 +25564,23 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 895,
+=======
+⏰ Timestamp: 2026-03-05T20:12:25.596709
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:25.593400",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 960,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 54,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:25:25.624556
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23290,12 +26261,23 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 833,
+=======
+⏰ Timestamp: 2026-03-05T20:12:38.600522
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:38.596683",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 990,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 50,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:35:25.137344
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23305,11 +26287,23 @@
   "panel_id": 2,
   "power_watts": 973,
   "temperature": 49,
+=======
+⏰ Timestamp: 2026-03-05T20:12:46.309981
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:46.306929",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 20,
+  "pump_status": "on",
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:35:26.138057
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23318,12 +26312,177 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 898,
+=======
+⏰ Timestamp: 2026-03-05T20:12:47.310353
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:47.307552",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:12:52.604684
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:12:52.601212",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 769,
+  "temperature": 60,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:05.658296
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:05.615517",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 898,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:17.646658
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:17.642840",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 889,
+  "temperature": 26,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:21.318604
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:21.315862",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:30.649598
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:30.646017",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 875,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:33.323077
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:33.320046",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:35.323907
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:35.321167",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:47.327540
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:47.324308",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:57.329738
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:57.326240",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:13:57.657977
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:13:57.654364",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 676,
+  "temperature": 27,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:08.658626
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:08.655727",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 725,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 38,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:35:52.147962
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23332,12 +26491,51 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 615,
+=======
+⏰ Timestamp: 2026-03-05T20:14:10.685604
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:10.682107",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 937,
+  "temperature": 25,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:34.690783
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:34.687138",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 879,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:35.692660
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:35.688459",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 761,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 37,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:36:17.167114
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23346,12 +26544,611 @@
   "device": "solar_panel",
   "panel_id": 2,
   "power_watts": 762,
+=======
+⏰ Timestamp: 2026-03-05T20:14:36.693308
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:36.689832",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 847,
+  "temperature": 29,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:46.343322
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:46.340107",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:48.696119
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:48.692344",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 911,
+  "temperature": 29,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:49.696275
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:49.693263",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 829,
+  "temperature": 28,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:14:58.346191
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:14:58.343092",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:01.699493
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:01.696547",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 819,
+  "temperature": 36,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:11.350109
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:11.347416",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 23,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:13.702332
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:13.699402",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 985,
+  "temperature": 60,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:14.703740
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:14.700342",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 653,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:26.705171
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:26.702484",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 612,
+  "temperature": 59,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:41.712489
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:41.708835",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 656,
+  "temperature": 26,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:52.714522
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:52.710347",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 981,
+  "temperature": 59,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:53.721652
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:53.713160",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 623,
+  "temperature": 51,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:15:58.361756
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:15:58.358605",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:05.721246
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:05.717728",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 919,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:06.722084
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:06.718566",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 934,
+  "temperature": 35,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:09.363591
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:09.360972",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:11.364790
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:11.362150",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:32.728648
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:32.725924",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 860,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:57.734669
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:57.732052",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 996,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:16:59.737271
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:16:59.733778",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 610,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:11.739986
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:11.736879",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 610,
+  "temperature": 25,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:12.740836
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:12.737850",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 614,
+  "temperature": 42,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:22.383725
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:22.381016",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:23.781787
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:23.754803",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 632,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:25.771135
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:25.768280",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 784,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:36.773061
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:36.769491",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 616,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:38.774028
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:38.771299",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 720,
+  "temperature": 32,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:17:50.777025
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:17:50.773429",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 767,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:00.395658
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:00.392864",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:02.780466
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:02.777626",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 883,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:04.782137
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:04.779297",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 847,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:15.783603
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:15.780554",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 944,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:30.789686
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:30.786818",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 816,
+  "temperature": 43,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:34.405011
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:34.402097",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:42.792776
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:42.789307",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 743,
+  "temperature": 25,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:18:56.796386
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:18:56.793762",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 859,
+  "temperature": 25,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:19:07.798037
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:19:07.795126",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 971,
+  "temperature": 51,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:19:22.803786
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:19:22.800601",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 930,
+  "temperature": 44,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:19:34.807590
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:19:34.804255",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 959,
+  "temperature": 57,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:20:00.815898
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:20:00.812094",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 706,
+  "temperature": 49,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:20:13.818955
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:20:13.815894",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 690,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:20:25.820654
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:20:25.817755",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 710,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 52,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:36:18.165885
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23360,12 +27157,163 @@
   "device": "solar_panel",
   "panel_id": 3,
   "power_watts": 855,
+=======
+⏰ Timestamp: 2026-03-05T20:20:26.823476
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:20:26.818563",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 956,
+  "temperature": 28,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:20:39.827206
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:20:39.823200",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 654,
+  "temperature": 51,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:06.842026
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:06.838511",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 651,
+  "temperature": 40,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:17.843942
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:17.840150",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 732,
+  "temperature": 58,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:18.845200
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:18.841028",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 908,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:22.459425
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:22.456365",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:31.848628
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:31.844489",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 907,
+  "temperature": 59,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:32.848829
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:32.845665",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 824,
+  "temperature": 39,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:36.463849
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:36.460643",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:45.464950
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:45.462181",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:45.852192
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:45.849276",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 802,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 41,
   "status": "ok"
 }
 ======================================================================
 
 ======================================================================
+<<<<<<< HEAD
 ⏰ Timestamp: 2026-03-06T08:36:29.168352
 📱 Device: solar_panel
 ❌ Reason: Validazione fallita
@@ -23374,7 +27322,1294 @@
   "device": "solar_panel",
   "panel_id": 1,
   "power_watts": 944,
+=======
+⏰ Timestamp: 2026-03-05T20:21:48.467670
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:48.464264",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:21:56.854332
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:21:56.850574",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 801,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:22:23.477084
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:22:23.473669",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:22:23.863900
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:22:23.859909",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 761,
+  "temperature": 32,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:22:46.483819
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:22:46.480672",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:22:47.483634
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:22:47.481268",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:22:59.487762
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:22:59.485187",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:00.488736
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:00.485921",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:01.875568
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:01.872208",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 816,
+  "temperature": 38,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:03.877767
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:03.874548",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 719,
+  "temperature": 28,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:11.491997
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:11.488424",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:16.880795
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:16.878075",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 603,
+  "temperature": 58,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:28.884542
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:28.881392",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 602,
+  "temperature": 49,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:29.885175
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:29.882193",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 701,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:40.886696
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:40.883534",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 749,
+  "temperature": 29,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:45.497646
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:45.494930",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:23:54.893390
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:23:54.887975",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 966,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:07.895800
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:07.891754",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 616,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:08.896516
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:08.892903",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 909,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:10.511158
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:10.507671",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:11.511301
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:11.508534",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:19.897148
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:19.894342",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 699,
+  "temperature": 40,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:20.898950
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:20.895364",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 690,
+  "temperature": 50,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:21.899277
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:21.896130",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 771,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:24.516181
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:24.512779",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:32.901365
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:32.897443",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 624,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:34.902514
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:34.899544",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 643,
+  "temperature": 40,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:58.527267
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:58.523902",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:24:59.907452
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:24:59.904146",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 623,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:09.529599
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:09.526613",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:11.909310
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:11.906588",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 767,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:12.911030
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:12.907346",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 755,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:36.536666
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:36.534052",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:48.540366
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:48.537307",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:52.920852
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:52.918172",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 707,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:25:59.542860
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:25:59.540017",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:03.922232
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:03.919127",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 843,
+  "temperature": 59,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:10.545188
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:10.542299",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 28,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:29.929710
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:29.926803",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 927,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:33.550611
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:33.547876",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:42.933396
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:42.930004",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 634,
+  "temperature": 59,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:44.935491
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:44.931953",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 706,
+  "temperature": 27,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:26:56.938487
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:26:56.934399",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 662,
+  "temperature": 32,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:08.939641
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:08.936806",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 632,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:09.941896
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:09.937821",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 676,
+  "temperature": 53,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:22.564003
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:22.561366",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:35.948940
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:35.945567",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 623,
+  "temperature": 33,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:36.949779
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:36.946387",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 720,
+  "temperature": 27,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:47.950763
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:47.947863",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 921,
+  "temperature": 49,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:27:49.953181
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:27:49.949805",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 693,
+  "temperature": 38,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:01.955245
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:01.951948",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 647,
+  "temperature": 55,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:09.575635
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:09.573079",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:11.576557
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:11.573942",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 29,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:26.961037
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:26.958596",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 867,
+  "temperature": 55,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:27.963133
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:27.959165",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 639,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:40.966412
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:40.962760",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 779,
+  "temperature": 44,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:47.588296
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:47.585648",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 22,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:28:53.970368
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:28:53.966858",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 609,
+  "temperature": 47,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:05.971672
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:05.968678",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 624,
+  "temperature": 36,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:07.973479
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:07.970626",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 992,
+  "temperature": 35,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:09.594449
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:09.591936",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 20,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:18.974981
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:18.972042",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 811,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:20.979410
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:20.976409",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 749,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:21.596907
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:21.594547",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:24.599765
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:24.596926",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:32.982520
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:32.979111",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 737,
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10
   "temperature": 25,
   "status": "ok"
 }
 ======================================================================
+<<<<<<< HEAD
+=======
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:45.603963
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:45.600968",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 21,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:46.990683
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:46.984898",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 657,
+  "temperature": 26,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:48.606546
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:48.604049",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:29:58.990729
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:29:58.987381",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 705,
+  "temperature": 42,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:10.993740
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:10.990719",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 779,
+  "temperature": 27,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:11.995407
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:11.991892",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 889,
+  "temperature": 31,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:37.000054
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:36.997396",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 735,
+  "temperature": 58,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:38.002013
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:37.998195",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 717,
+  "temperature": 30,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:39.002963
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:38.999473",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 736,
+  "temperature": 48,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:46.622901
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:46.620128",
+  "device": "irrigation",
+  "zone_id": 2,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:57.624486
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:57.621985",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 26,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:30:59.625623
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:30:59.622880",
+  "device": "irrigation",
+  "zone_id": 3,
+  "soil_moisture": 24,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:03.006973
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:03.004091",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 927,
+  "temperature": 28,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:12.629587
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:12.626654",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:16.012215
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:16.009290",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 972,
+  "temperature": 34,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:17.031004
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:17.012579",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 1000,
+  "temperature": 39,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:44.038110
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:44.035114",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 835,
+  "temperature": 41,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:31:48.644566
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:31:48.641286",
+  "device": "irrigation",
+  "zone_id": 4,
+  "soil_moisture": 27,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:08.043329
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:08.040427",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 761,
+  "temperature": 44,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:21.047232
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:21.043554",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 792,
+  "temperature": 56,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:21.653062
+📱 Device: irrigation
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:21.649616",
+  "device": "irrigation",
+  "zone_id": 1,
+  "soil_moisture": 25,
+  "pump_status": "on",
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:22.049159
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:22.044952",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 665,
+  "temperature": 43,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:35.052700
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:35.048927",
+  "device": "solar_panel",
+  "panel_id": 2,
+  "power_watts": 632,
+  "temperature": 49,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:36.052987
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:36.049858",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 742,
+  "temperature": 42,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:47.058846
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:47.051626",
+  "device": "solar_panel",
+  "panel_id": 1,
+  "power_watts": 881,
+  "temperature": 37,
+  "status": "ok"
+}
+======================================================================
+
+======================================================================
+⏰ Timestamp: 2026-03-05T20:32:49.059902
+📱 Device: solar_panel
+❌ Reason: Validazione fallita
+📊 Data: {
+  "timestamp": "2026-03-05T20:32:49.056706",
+  "device": "solar_panel",
+  "panel_id": 3,
+  "power_watts": 625,
+  "temperature": 52,
+  "status": "ok"
+}
+======================================================================
+>>>>>>> 9095cb62dcefcbfb128360ad379d4cb17ad4bf10

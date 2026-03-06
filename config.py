@@ -62,7 +62,7 @@ VALIDATION_RULES = {
     },
     'irrigation': {
         'zone_id': {'min': 1, 'max': 10},
-        'soil_moisture': {'min': 0, 'max': 100},
+        'soil_moisture': {'min': 30, 'max': 90},
         'pump_status': {'allowed': ['on', 'off']}
     },
     'alarm_system': {
