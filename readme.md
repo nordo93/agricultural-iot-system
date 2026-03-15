@@ -37,34 +37,41 @@ Sistema completo di gestione messaggi per impianti agricoli con pannelli solari,
 
 ```bash
 pip install -r requirements.txt
+cd .\docker-compose\
 docker-compose up -d
+cd..
 ```
 
 ### 2️⃣ Avviare in terminali separati
 
 **Terminal 1 - Monitoraggio (Real-time)**
 ```bash
-python consumers/monitoring_app.py
+python.exe .\consumer\monitoring_app.py
 ```
 
 **Terminal 2 - Logger (Storico)**
 ```bash
-python consumers/logger_app.py
+python .\consumer\logger_app.py
 ```
 
-**Terminal 3 - Pannelli Solari**
+**Terminal 3 - dead letter (Storico errori)**
 ```bash
-python producers/solar_panels.py
+python .\consumer\dead_letter_handler.py
 ```
 
-**Terminal 4 - Irrigatori**
+**Terminal 4 - Pannelli Solari**
 ```bash
-python producers/irrigation.py
+python .\producers\solar_panels.py
 ```
 
-**Terminal 5 - Sistema di Allarme**
+**Terminal 5 - Irrigatori**
 ```bash
-python producers/alarm_system.py
+python producers\irrigation.py
+```
+
+**Terminal 6 - Sistema di Allarme**
+```bash
+python producers\alarm_system.py
 ```
 
 ## 📊 Output atteso
@@ -88,7 +95,14 @@ Controlla `agricultural_events.log` per lo storico completo.
 http://localhost:15672
 
 - Username: `admin`
-- Password: `rabbitpwd`
+- Password: `admin`
+
+## 🔍 Web UI
+
+http://localhost:5000
+
+- Username: `admin`
+- Password: `admin`
 
 Puoi visualizzare:
 - **Exchanges**: `agricultural_events`

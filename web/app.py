@@ -25,12 +25,12 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 # Statistiche globali
 stats = {
     'solar_panels': defaultdict(lambda: {
-        'measurements': [],  # Lista di {'timestamp': ..., 'power': ..., 'temp': ...}
+        'measurements': [],
         'count': 0,
         'last_update': None
     }),
     'irrigation': defaultdict(lambda: {
-        'measurements': [],  # Lista di {'timestamp': ..., 'moisture': ..., 'pump_status': ...}
+        'measurements': [],
         'count': 0,
         'last_update': None
     }),
@@ -52,7 +52,7 @@ class RabbitMQConsumer:
         self.connected = False
     
     def connect(self):
-        """Connessione a RabbitMQ e dichiarazione queue/exchange"""
+        """Connessione a RabbitMQ"""
         try:
             self.connection = pika.BlockingConnection(
                 pika.ConnectionParameters(
@@ -72,11 +72,17 @@ class RabbitMQConsumer:
                 durable=True
             )
             
-            # Dichiara e collega la queue
+            # Dichiara queue con Dead Letter Exchange
             self.channel.queue_declare(
                 queue=QUEUES['web_dashboard']['name'],
-                durable=True
+                durable=True,
+                arguments={
+                    'x-dead-letter-exchange': DEAD_LETTER_EXCHANGE,
+                    'x-dead-letter-routing-key': 'dead_letter'
+                }
             )
+            
+            # Collega la queue all'exchange
             self.channel.queue_bind(
                 exchange=EXCHANGE_NAME,
                 queue=QUEUES['web_dashboard']['name'],
@@ -87,8 +93,8 @@ class RabbitMQConsumer:
             print(f"✅ [WEB] Connesso a RabbitMQ")
             print(f"   Exchange: {EXCHANGE_NAME}")
             print(f"   Queue: {QUEUES['web_dashboard']['name']}")
-            print(f"   Binding: {QUEUES['web_dashboard']['binding_key']}")
             return True
+        
         except Exception as e:
             print(f"❌ [WEB] Errore connessione: {e}")
             import traceback
@@ -97,16 +103,12 @@ class RabbitMQConsumer:
             return False
 
     def callback(self, ch, method, properties, body):
-        """
-        Callback che elabora ogni messaggio ricevuto
-        Viene chiamato CONTINUAMENTE per ogni nuovo messaggio
-        """
+        """Processa ogni messaggio ricevuto"""
         try:
             message = json.loads(body.decode())
             device = message.get('device', '')
             
             with stats_lock:
-                # Aggiorna le statistiche in base al tipo di dispositivo
                 if device == 'solar_panel':
                     self.update_solar_stats(message)
                 elif device == 'irrigation':
@@ -117,21 +119,20 @@ class RabbitMQConsumer:
                 stats['total_messages'] += 1
                 messages_count = stats['total_messages']
             
-            # Invia il nuovo messaggio ai client WebSocket (tempo reale)
+            # Invia a WebSocket
             socketio.emit('new_message', {
                 'device': device,
                 'data': message,
                 'timestamp': datetime.now().isoformat()
             }, skip_sid=None)
             
-            # Invia aggiornamento statistiche ogni 10 messaggi
+            # Aggiorna stats ogni 10 messaggi
             if messages_count % 10 == 0:
                 self.broadcast_stats()
             
-            # Acknowledge del messaggio (confermo di averlo consumato)
+            # ACK del messaggio
             ch.basic_ack(delivery_tag=method.delivery_tag)
             
-            # Debug - stampa ogni 50 messaggi
             if messages_count % 50 == 0:
                 print(f"📨 [WEB] Messaggi consumati: {messages_count}")
         
@@ -139,9 +140,8 @@ class RabbitMQConsumer:
             print(f"❌ [WEB] Errore processing: {e}")
             import traceback
             traceback.print_exc()
-            # Nack e requeue il messaggio se c'è errore
-            ch.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
-    
+            ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
+
     def update_solar_stats(self, msg):
         """Aggiorna le statistiche dei pannelli solari"""
         panel_id = msg.get('panel_id')
@@ -151,7 +151,6 @@ class RabbitMQConsumer:
         
         s = stats['solar_panels'][panel_id]
         
-        # Aggiungi la misurazione con timestamp
         s['measurements'].append({
             'timestamp': timestamp,
             'power': power,
@@ -161,7 +160,7 @@ class RabbitMQConsumer:
         s['count'] += 1
         s['last_update'] = datetime.now().isoformat()
         
-        # Mantieni solo le misurazioni dell'ultima ora
+        # Mantieni solo ultima ora
         one_hour_ago = datetime.now() - __import__('datetime').timedelta(hours=1)
         s['measurements'] = [m for m in s['measurements'] if m['timestamp'] > one_hour_ago]
     
@@ -170,20 +169,22 @@ class RabbitMQConsumer:
         zone_id = msg.get('zone_id')
         moisture = msg.get('soil_moisture', 0)
         pump_status = msg.get('pump_status', 'off')
+        timestamp = datetime.fromisoformat(msg.get('timestamp', datetime.now().isoformat()))
         
         s = stats['irrigation'][zone_id]
-        s['moisture'].append(moisture)
+        
+        s['measurements'].append({
+            'timestamp': timestamp,
+            'moisture': moisture,
+            'pump_status': pump_status
+        })
+        
         s['count'] += 1
         s['last_update'] = datetime.now().isoformat()
         
-        if pump_status == 'on':
-            s['pump_on'] += 1
-        else:
-            s['pump_off'] += 1
-        
-        # Mantieni solo gli ultimi 100 valori (finestra mobile)
-        if len(s['moisture']) > 100:
-            s['moisture'] = s['moisture'][-100:]
+        # Mantieni solo ultima ora
+        one_hour_ago = datetime.now() - __import__('datetime').timedelta(hours=1)
+        s['measurements'] = [m for m in s['measurements'] if m['timestamp'] > one_hour_ago]
     
     def update_alarm_stats(self, msg):
         """Aggiorna le statistiche degli allarmi"""
@@ -191,12 +192,7 @@ class RabbitMQConsumer:
         stats['alarms'][severity]['count'] += 1
     
     def broadcast_stats(self):
-        """
-        Calcola e invia le statistiche aggregate ai client WebSocket
-        Viene chiamato ogni 10 messaggi
-        """
-        print(f"📊 [WEB] Calcolo e invio statistiche ai client...")
-        
+        """Calcola e invia le statistiche ai client WebSocket"""
         with stats_lock:
             uptime = datetime.now() - stats['start_time']
             uptime_minutes = int(uptime.total_seconds() // 60)
@@ -206,9 +202,7 @@ class RabbitMQConsumer:
             for panel_id in sorted(stats['solar_panels'].keys()):
                 s = stats['solar_panels'][panel_id]
                 
-                # Se ci sono misurazioni, calcola statistiche
                 if s['measurements']:
-                    # Media dell'ultima ora
                     powers = [m['power'] for m in s['measurements']]
                     temps = [m['temp'] for m in s['measurements']]
                     
@@ -217,8 +211,7 @@ class RabbitMQConsumer:
                     min_power = min(powers) if powers else 0
                     max_power = max(powers) if powers else 0
                     
-                    # Ultima misurazione
-                    last_measurement = s['measurements'][-1]  # L'ultimo elemento
+                    last_measurement = s['measurements'][-1]
                     last_power = last_measurement['power']
                     last_temp = last_measurement['temp']
                     last_timestamp = last_measurement['timestamp'].isoformat()
@@ -242,13 +235,16 @@ class RabbitMQConsumer:
             for zone_id in sorted(stats['irrigation'].keys()):
                 s = stats['irrigation'][zone_id]
                 
-                # Calcola media, min, max dell'umidità
-                avg_moisture = sum(s['moisture']) / len(s['moisture']) if s['moisture'] else 0
-                min_moisture = min(s['moisture']) if s['moisture'] else 0
-                max_moisture = max(s['moisture']) if s['moisture'] else 0
-                
-                # Calcola percentuale pompa accesa
-                pump_on_pct = (s['pump_on'] / s['count'] * 100) if s['count'] > 0 else 0
+                if s['measurements']:
+                    moistures = [m['moisture'] for m in s['measurements']]
+                    avg_moisture = sum(moistures) / len(moistures)
+                    min_moisture = min(moistures)
+                    max_moisture = max(moistures)
+                    
+                    pump_on_count = sum(1 for m in s['measurements'] if m['pump_status'] == 'on')
+                    pump_on_pct = (pump_on_count / len(s['measurements'])) * 100
+                else:
+                    avg_moisture = min_moisture = max_moisture = pump_on_pct = 0
                 
                 irrigation_data[str(zone_id)] = {
                     'avg_moisture': round(avg_moisture, 1),
@@ -262,11 +258,11 @@ class RabbitMQConsumer:
             alarms_data = {}
             total_alarms = 0
             for severity in ['critical', 'high', 'medium', 'low']:
-                count = stats['alarms'].get(severity, {}).get('count', 0)
+                count = stats['alarms'][severity]['count']
                 alarms_data[severity] = count
                 total_alarms += count
             
-            # Invia i dati aggregati a TUTTI i client WebSocket
+            # Invia ai client WebSocket
             socketio.emit('stats_update', {
                 'total_messages': stats['total_messages'],
                 'uptime_minutes': uptime_minutes,
@@ -277,29 +273,21 @@ class RabbitMQConsumer:
             }, skip_sid=None)
 
     def start_consuming(self):
-        """
-        Inizia il consuming dei messaggi da RabbitMQ
-        Questo metodo BLOCCA il thread e rimane in ascolto continuamente
-        """
-        # Configurazione QoS (Quality of Service)
-        # prefetch_count=10 significa che il consumer riceve 10 messaggi per volta
+        """Inizia a consumare messaggi"""
         self.channel.basic_qos(prefetch_count=10)
-        
-        # Configura il callback per questa queue
         self.channel.basic_consume(
             queue=QUEUES['web_dashboard']['name'],
             on_message_callback=self.callback
         )
         
-        print(f"⏳ [WEB] In ascolto da RabbitMQ...")
-        print(f"📨 Il consuming avviene CONTINUAMENTE su ogni nuovo messaggio")
-        print(f"📊 Le statistiche vengono calcolate ogni 10 messaggi\n")
+        print("=" * 70)
+        print("📊 [WEB] In ascolto da RabbitMQ...")
+        print(f"📁 Queue: {QUEUES['web_dashboard']['name']}\n")
         
-        # Questo rimane in ascolto indefinitamente
         self.channel.start_consuming()
     
     def close(self):
-        """Chiude la connessione a RabbitMQ"""
+        """Chiude la connessione"""
         if self.connection and not self.connection.is_closed:
             self.connection.close()
             print("✅ [WEB] Connessione RabbitMQ chiusa")
@@ -312,7 +300,7 @@ consumer = None
 consumer_thread = None
 
 def start_consumer_thread():
-    """Avvia il consumer RabbitMQ in un thread separato dal server Flask"""
+    """Avvia il consumer in un thread separato"""
     global consumer, consumer_thread
     
     consumer = RabbitMQConsumer()
@@ -320,7 +308,6 @@ def start_consumer_thread():
         print("❌ [WEB] Impossibile connettersi a RabbitMQ")
         return False
     
-    # Avvia il consumer in un thread daemon (termina quando muore il processo principale)
     consumer_thread = threading.Thread(
         target=consumer.start_consuming,
         daemon=True,
@@ -336,12 +323,12 @@ def start_consumer_thread():
 
 @app.route('/')
 def index():
-    """Pagina principale - Ritorna il template HTML"""
+    """Pagina principale"""
     return render_template('index.html')
 
 @app.route('/api/stats')
 def get_stats():
-    """API REST per ottenere le statistiche (fallback se WebSocket non funziona)"""
+    """API REST per le statistiche"""
     with stats_lock:
         return {
             'total_messages': stats['total_messages'],
@@ -357,12 +344,15 @@ def get_stats():
 
 @socketio.on('connect')
 def handle_connect():
-    """Evento: nuovo client WebSocket connesso"""
+    """Client WebSocket connesso"""
     client_ip = request.remote_addr if request else 'unknown'
-    print(f"✅ [WEB] Client WebSocket connesso da: {client_ip}")
+    print(f"✅ [WEB] Client connesso da: {client_ip}")
     
     with stats_lock:
-        # ========== Prepara dati pannelli solari ==========
+        uptime = datetime.now() - stats['start_time']
+        uptime_minutes = int(uptime.total_seconds() // 60)
+        
+        # Prepara dati pannelli solari
         solar_data = {}
         for panel_id in sorted(stats['solar_panels'].keys()):
             s = stats['solar_panels'][panel_id]
@@ -371,10 +361,10 @@ def handle_connect():
                 powers = [m['power'] for m in s['measurements']]
                 temps = [m['temp'] for m in s['measurements']]
                 
-                avg_power = sum(powers) / len(powers) if powers else 0
-                avg_temp = sum(temps) / len(temps) if temps else 0
-                min_power = min(powers) if powers else 0
-                max_power = max(powers) if powers else 0
+                avg_power = sum(powers) / len(powers)
+                avg_temp = sum(temps) / len(temps)
+                min_power = min(powers)
+                max_power = max(powers)
                 
                 last_measurement = s['measurements'][-1]
                 last_power = last_measurement['power']
@@ -395,14 +385,21 @@ def handle_connect():
                 'count': s['count']
             }
         
-        # ========== Prepara dati irrigatori ==========
+        # Prepara dati irrigatori
         irrigation_data = {}
         for zone_id in sorted(stats['irrigation'].keys()):
             s = stats['irrigation'][zone_id]
-            avg_moisture = sum(s['moisture']) / len(s['moisture']) if s['moisture'] else 0
-            min_moisture = min(s['moisture']) if s['moisture'] else 0
-            max_moisture = max(s['moisture']) if s['moisture'] else 0
-            pump_on_pct = (s['pump_on'] / s['count'] * 100) if s['count'] > 0 else 0
+            
+            if s['measurements']:
+                moistures = [m['moisture'] for m in s['measurements']]
+                avg_moisture = sum(moistures) / len(moistures)
+                min_moisture = min(moistures)
+                max_moisture = max(moistures)
+                
+                pump_on_count = sum(1 for m in s['measurements'] if m['pump_status'] == 'on')
+                pump_on_pct = (pump_on_count / len(s['measurements'])) * 100
+            else:
+                avg_moisture = min_moisture = max_moisture = pump_on_pct = 0
             
             irrigation_data[str(zone_id)] = {
                 'avg_moisture': round(avg_moisture, 1),
@@ -412,28 +409,27 @@ def handle_connect():
                 'count': s['count']
             }
         
-        # ========== Prepara dati allarmi ==========
+        # Prepara dati allarmi
         alarms_dict = {}
+        total_alarms = 0
         for severity in ['critical', 'high', 'medium', 'low']:
-            if severity in stats['alarms']:
-                alarms_dict[severity] = stats['alarms'][severity]['count']
-            else:
-                alarms_dict[severity] = 0
+            count = stats['alarms'][severity]['count']
+            alarms_dict[severity] = count
+            total_alarms += count
         
-        # Invia le statistiche iniziali al nuovo client
         emit('stats_update', {
             'total_messages': stats['total_messages'],
-            'uptime_minutes': int((datetime.now() - stats['start_time']).total_seconds() // 60),
+            'uptime_minutes': uptime_minutes,
             'solar_panels': solar_data,
             'irrigation': irrigation_data,
             'alarms': alarms_dict,
-            'total_alarms': sum(alarms_dict.values())
+            'total_alarms': total_alarms
         })
 
 @socketio.on('disconnect')
 def handle_disconnect():
-    """Evento: client WebSocket disconnesso"""
-    print("❌ [WEB] Client WebSocket disconnesso")
+    """Client WebSocket disconnesso"""
+    print("❌ [WEB] Client disconnesso")
 
 @socketio.on_error_default
 def default_error_handler(e):
@@ -451,12 +447,10 @@ if __name__ == '__main__':
     print("🌐 SERVER WEB - DASHBOARD AGRICOLO IoT")
     print("=" * 70)
     
-    # Avvia il consumer RabbitMQ in un thread separato
     if not start_consumer_thread():
-        print("❌ Errore nell'avvio del consumer RabbitMQ")
+        print("❌ Errore nell'avvio del consumer")
         sys.exit(1)
     
-    # Avvia il server Flask con WebSocket
     print("🚀 Avvio server Flask su:")
     print("   http://localhost:5000")
     print("   http://0.0.0.0:5000")
@@ -476,7 +470,7 @@ if __name__ == '__main__':
         if consumer:
             consumer.close()
     except Exception as e:
-        print(f"❌ Errore nell'avvio del server: {e}")
+        print(f"❌ Errore: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)
