@@ -40,6 +40,9 @@ pip install -r requirements.txt
 cd .\docker-compose\
 docker-compose up -d
 cd..
+# Verifica
+docker-compose ps
+Poi accedi a: http://localhost:15672 con admin / admin
 ```
 
 ### 2️⃣ Avviare in terminali separati

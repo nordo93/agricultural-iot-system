@@ -1,0 +1,3 @@
+trash/
+__pycache__/
+Docker-compose/rabbitmq_test/

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Validazione centralizzata dei messaggi
-Come richiesto dal professore: validazione nel consumer, non nel producer
+: validazione nel consumer, non nel producer
 
 Producer (solar_panels.py)
     ↓ invia messaggio
