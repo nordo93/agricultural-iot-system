@@ -1,170 +1,86 @@
-# 🌾 Agricultural IoT System - RabbitMQ
 
-Sistema completo di gestione messaggi per impianti agricoli con pannelli solari, irrigatori e sistema di allarme.
+# 🌾 Agricultural IoT System — RabbitMQ
+
+Sistema distribuito di raccolta, instradamento e monitoraggio di eventi IoT per impianti agricoli.
+Gestisce dati provenienti da pannelli solari, irrigatori e sistema di allarme tramite RabbitMQ,
+con Web App integrata, logging strutturato e gestione degli errori via Dead Letter Queue.
+
+---
 
 ## 🏗️ Architettura
+<img width="730" height="433" alt="image" src="https://github.com/user-attachments/assets/468531d4-332d-4f50-a02f-406d06259fd8" />
 
-```
-┌─────────────────────┐
-│  Pannelli Solari    │ ──┐
-│  (Producer)         │   │
-└─────────────────────┘   │
-                          │
-┌─────────────────────┐   │     ┌──────────────────┐
-│  Irrigatori         │ ──┼──→  │ RabbitMQ Exchange│
-│  (Producer)         │   │     │  (Topic/Fanout)  │
-└─────────────────────┘   │     └──────────────────┘
-                          │            │
-┌─────────────────────┐   │     ┌──────┴──────┬──────────┐
-│  Sistema Allarme    │ ──┘     │             │          │
-│  (Producer)         │         │ Queue 1     │ Queue 2  │
-└─────────────────────┘         │ (Monitor)   │(Logger)  │
-                                │             │          │
-                            ┌───▼─┐      ┌───▼──┐
-                            │ Web │      │ File │
-                            │ App │      │ Log  │
-                            └─────┘      └──────┘
-```
+---
 
 ## 📋 Requisiti
 
-- Docker Desktop installato
+- Docker Desktop
 - Python 3.7+
+- pip install -r requirements.txt
+
+---
 
 ## 🚀 Avvio rapido
 
-### 1️⃣ Preparazione
+### 1️⃣ Installazione dipendenze e avvio RabbitMQ
 
 ```bash
 pip install -r requirements.txt
-cd .\docker-compose\
+cd docker-compose
 docker-compose up -d
-cd..
-# Verifica
-docker-compose ps
-Poi accedi a: http://localhost:15672 con admin / admin
+cd ..
 ```
 
-### 2️⃣ Avviare in terminali separati
+Verifica RabbitMQ Management UI: [http://localhost:15672](http://localhost:15672)
+- Username: `admin` | Password: `admin`
 
-**Terminal 1 - Monitoraggio (Real-time)**
+---
+
+### 2️⃣ Avviare i componenti (terminali separati)
+
+**Terminal 1 — Monitoraggio real-time**
 ```bash
-python.exe .\consumer\monitoring_app.py
+python consumer/monitoring_app.py
 ```
 
-**Terminal 2 - Logger (Storico)**
+**Terminal 2 — Logger storico (JSON)**
 ```bash
-python .\consumer\logger_app.py
+python consumer/logger_app.py
 ```
 
-**Terminal 3 - dead letter (Storico errori)**
+**Terminal 3 — Dead Letter Handler (errori)**
 ```bash
-python .\consumer\dead_letter_handler.py
+python consumer/dead_letter_handler.py
 ```
 
-**Terminal 4 - Pannelli Solari**
+**Terminal 4 — Producer: Pannelli Solari**
 ```bash
-python .\producers\solar_panels.py
+python producers/solar_panels.py
 ```
 
-**Terminal 5 - Irrigatori**
+**Terminal 5 — Producer: Irrigatori**
 ```bash
-python producers\irrigation.py
+python producers/irrigation.py
 ```
 
-**Terminal 6 - Sistema di Allarme**
+**Terminal 6 — Producer: Sistema di Allarme**
 ```bash
-python producers\alarm_system.py
+python producers/alarm_system.py
 ```
+
+---
+
+## 🌐 Interfacce Web
+
+| Interfaccia | URL | Credenziali |
+|---|---|---|
+| RabbitMQ Management | http://localhost:15672 | admin / admin |
+| Web App Flask | http://localhost:5000 | admin / admin |
+
+Dalla Web App è possibile visualizzare eventi in tempo reale, code attive, binding e statistiche.
+
+---
 
 ## 📊 Output atteso
 
-### Monitoraggio
-```
-☀️ PANNELLO 1 | 456W @ 32°C | ok
-💧 ON  | ZONA 1 | Umidità:  35% | ok
-⚨ ALLARME [HIGH] Temperatura pannello sopra soglia
-```
-
-### Logger
-```
-📝 Evento loggato | Device: solar_panel | agriculture.solar_panels.1
-```
-
-Controlla `agricultural_events.log` per lo storico completo.
-
-## 🔍 Management UI
-
-http://localhost:15672
-
-- Username: `admin`
-- Password: `admin`
-
-## 🔍 Web UI
-
-http://localhost:5000
-
-- Username: `admin`
-- Password: `admin`
-
-Puoi visualizzare:
-- **Exchanges**: `agricultural_events`
-- **Queues**: `monitoring_queue`, `logger_queue`
-- **Bindings**: Pattern di routing
-
-## 📝 File di Log
-
-Il file `agricultural_events.log` contiene tutti gli eventi in JSON:
-
-```json
-{
-  "timestamp": "2026-02-20T10:54:00+01:00",
-  "device": "solar_panel",
-  "panel_id": 1,
-  "power_watts": 456,
-  "temperature": 32,
-  "status": "ok"
-}
-```
-
-## 🛑 Arresto
-
-```bash
-# Ferma i producer/consumer (Ctrl+C)
-# Arresta RabbitMQ
-docker-compose down
-```
-
-## 🔧 Personalizzazione
-
-### Aggiungere un nuovo dispositivo
-
-1. Crea un nuovo producer in `producers/`
-2. Usa `EXCHANGE_NAME` e routing key pattern: `agriculture.type.*`
-3. I consumer riceveranno automaticamente gli eventi!
-
-### Modificare topic di routing
-
-Edita `config.py`:
-
-```python
-TOPICS = {
-    'mio_dispositivo': 'agriculture.mio_dispositivo.#',
-}
-```
-
-## 📈 Caso d'uso reale
-
-Questo sistema è ideale per:
-- ✅ Monitorare sensori agricoli in tempo reale
-- ✅ Registrare dati storici per analisi
-- ✅ Ricevere alerting su anomalie
-- ✅ Scalare a centinaia di dispositivi
-- ✅ Integrare con dashboard web/mobile
-
-## 💡 Suggerimenti avanzati
-
-- **Clustering**: Aggiungi più consumer per load balancing
-- **Persistenza**: I dati rimangono in RabbitMQ fino a consumo
-- **DLQ**: Dead Letter Queue per errori
-- **Metriche**: Integra Prometheus per monitoring
+**monitoring_app.py**
