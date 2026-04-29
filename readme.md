@@ -75,12 +75,16 @@ python producers/alarm_system.py
 | Interfaccia | URL | Credenziali |
 |---|---|---|
 | RabbitMQ Management | http://localhost:15672 | admin / admin |
-| Web App Flask | http://localhost:5000 | admin / admin |
+| Web App Flask | NON necessario e non ANCORA IMPLEMENTATO |  NON necessario e non ANCORA IMPLEMENTATO | 
 
-Dalla Web App è possibile visualizzare eventi in tempo reale, code attive, binding e statistiche.
+una futura web app potrebbe rendere possibile visualizzare eventi in tempo reale, code attive, binding e statistiche.
 
 ---
 
 ## 📊 Output atteso
 
 **monitoring_app.py**
+
+
+<img width="916" height="161" alt="image" src="https://github.com/user-attachments/assets/ce49e640-0240-43b1-8870-4b1edd957fc0" />
+
